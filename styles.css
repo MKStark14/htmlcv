@@ -1,0 +1,118 @@
+/*Maxim Polishchuk HTML CV stylesheet*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	color: #000;
+	background-color: #eaeaea;
+	font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, .hvy {
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p, ul, h3 {
+    margin: 0;
+}
+
+li {
+    text-align: justify;
+}
+
+section>div {
+    background-color: #369;
+    background-clip: border-box;
+    padding: 0 0.6em;
+}
+
+article {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+article>div {
+    padding: 0 0.6em;
+}
+
+a:link, a:visited {
+    color: #369;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+.blue {
+    color: #369;
+}
+
+.summary {
+    font-style: italic;
+    text-align: justify;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-head {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid50-50 {
+    grid-template-columns: 1fr 1fr;
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    padding: 6px;
+}
+
+#myphoto {
+	width: 150px;
+	height: 150px;
+	margin: 0px 10px 10px 0px;
+    float: left;
+}
+
+#copyright {
+	font-size: .8em;
+	color: #555;
+	margin-top: 30px;
+}
+
+/* FOR SMALL DEVICES */
+@media (max-width: 600px) {
+	article, .grid50-50 {
+		grid-template-columns: 1fr;
+	}
+    .date {
+    color: #369;
+    }
+}
